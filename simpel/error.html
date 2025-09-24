@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error Message</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .error-box {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 24px 32px;
+      border-radius: 16px;
+      max-width: 360px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .error-icon {
+      font-size: 44px;
+      color: #ef4444;
+      margin-bottom: 12px;
+    }
+
+    .error-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .error-message {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-box">
+    <div class="error-icon">⚠️</div>
+    <div class="error-title">Oops, an error occurred</div>
+    <div class="error-message">
+      Something went wrong while processing your request.<br>
+      Please try again later.
+    </div>
+  </div>
+</body>
+    </html>
