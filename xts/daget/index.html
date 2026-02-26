@@ -1,2 +1,3 @@
-<!DOCTYPE html><html><head><script src="https://telegram.org/js/telegram-web-app.js"></script></head><body><h3>Test Send Data</h3><button onclick="kirim()">KIRIM SEKARANG</button><script> function kirim() { const tg = window.Telegram.WebApp; if (!tg) return alert('Tidak di Telegram'); tg.expand(); tg.sendData('INIDATAKODE'); tg.showPopup({ message: 'Data dikirim!' }); } </script></body></html>
+
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://telegram.org/js/telegram-web-app.js"></script><title>Mini App Kirim Data</title></head><body><button onclick="kirimData()">Kirim Data ke Bot</button><script> function kirimData() { const payload = { action: 'klik_tombol', pesan: 'Halo dari Mini App!', timestamp: Date.now() }; Telegram.WebApp.sendData(JSON.stringify(payload)); } </script></body></html>
 
