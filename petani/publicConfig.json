@@ -36,11 +36,11 @@
   "monitoring": {
     "enableErrorAlerts": false,
     "alertWebhookUrl": "",
-    "errorLog": true,
+    "errorLog": true
   },
   "telegram": {
     "parseMode": "HTML",
-    "richMesage": false,
+    "richMessage": false,
     "disableWebPagePreview": false,
     "disableNotification": false,
     "template": ""
