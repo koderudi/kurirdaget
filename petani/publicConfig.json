@@ -11,7 +11,7 @@
   },
   "execution": {
     "timePostWIB": ["07:00", "09:00", "12:00", "15:00", "18:00", "21:00"],
-    "bypassTimePost": false,
+    "bypassTimePost": true,
     "delayMs": 8888,
     "maxRetries": 3,
     "retryDelayMs": 1000,
