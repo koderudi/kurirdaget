@@ -1,0 +1,48 @@
+{
+  "version": "1.1.0",
+  "system": {
+    "autoPost": true,
+    "forceStop": false,
+    "pollIntervalMs": 60000,
+    "externalPool": true,
+    "batchSize": 5,
+    "fetchTimeoutMs": 8000,
+    "maxPostsPerRun": 10
+  },
+  "execution": {
+    "timePostWIB": ["07:00", "09:00", "12:00", "15:00", "18:00", "21:00"],
+    "bypassTimePost": false,
+    "delayMs": 8888,
+    "maxRetries": 3,
+    "retryDelayMs": 1000,
+    "dedupTTLSeconds": 604800
+  },
+  "content": {
+    "maxArticlesPerFeed": 3,
+    "bypassMaxArticlesPerFeed": false,
+    "maxArticleAgeHours": 10,
+    "keywordsInclude": [],
+    "keywordsExclude": [],
+    "disabledSources": [],
+    "blacklistTeks": ["join"],
+    "appendHashtags": [],
+    "cleanUrlTracking": true
+  },
+  "translation": {
+    "enabled": false,
+    "targetLanguage": "id",
+    "translateTitleOnly": true
+  },
+  "monitoring": {
+    "enableErrorAlerts": false,
+    "alertWebhookUrl": "",
+    "errorLog": true,
+  },
+  "telegram": {
+    "parseMode": "HTML",
+    "richMesage": false,
+    "disableWebPagePreview": false,
+    "disableNotification": false,
+    "template": ""
+  }
+}
